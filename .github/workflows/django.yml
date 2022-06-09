@@ -29,4 +29,6 @@ jobs:
     - name: Run Tests
       run: |
         cd Implementacija/djiro
+        python manage.py makemigrations
+        python manage.py migrate
         python manage.py test
